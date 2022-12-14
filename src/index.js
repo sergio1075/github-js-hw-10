@@ -1,12 +1,14 @@
-import menu from './js/menu.json';
+import menu from "./js/menu.json";
+// console.log(menu);
+
+import menuItems from "./js/menu-items.hbs";
+// console.log(menuItems);
+
+const menuRef = document.querySelector('.js-menu');
+const markup = menuItems(this);
+
+menuRef.insertAdjacentHTML("beforeend", markup);
 
 
 
-const menuRef = document.querySelector("./js-menu");
-const markup = itemsTemplete(menu);
-menuRef.insertAdjacentElement("beforeend", markup);
-
-
-console.log(menu);
-
-
+// console.log(menuRef);
